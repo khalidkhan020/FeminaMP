@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    android:background="@drawable/textviewselector"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/incorrect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/remove"
+        android:text="TextView"
+        android:textColor="@color/default_ack_fg"
+        android:textSize="@dimen/timeline_normal_text_size" />
+
+    <ImageButton
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/remove" />
+
+    <TextView
+        android:id="@+id/correct"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/incorrect"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/remove"
+        android:text="TextView"
+        android:textColor="@color/default_ack_fg"
+        android:textSize="@dimen/timeline_normal_text_size" />
+
+</RelativeLayout>

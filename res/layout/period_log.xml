@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/upperlayout"
+        android:layout_alignParentTop="true"
+        layout="@layout/log_header" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottm"
+        android:layout_below="@+id/upperlayout"
+        layout="@layout/past_list" />
+
+   <include
+       android:id="@+id/bottm"
+       android:layout_alignParentBottom="true"
+       layout="@layout/log_bittom" />
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/content"
+    android:background="@drawable/mpt_background"
+    android:orientation="vertical" >
+    
+   <com.linchpin.periodtracker.widget.BackBar
+        android:id="@+id/settingsheaderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5dp"
+        android:text="@string/my_home"
+        custom:backbarbackground="@drawable/backbuttonselctor" >
+    </com.linchpin.periodtracker.widget.BackBar>
+    
+  <!--   <LinearLayout
+        android:id="@+id/settingsheaderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <ImageButton
+            android:id="@+id/settingsback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/backbuttonselctor" />
+
+        <TextView
+            android:id="@+id/settings"
+            style="@style/MyDefaultTextAppearanceforheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/settings" />
+    </LinearLayout>
+ -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/settingsinfobutton"
+        android:layout_below="@+id/settingsheaderlayout" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/h1"
+                style="@style/MyDefaultTextAppearance"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:text="@string/personalsettings" />
+
+            <ListView
+                android:id="@+id/defaultsettinglist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="#cccccc"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/h2"
+                style="@style/MyDefaultTextAppearance"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:text="@string/applicationsettings" />
+
+            <ListView
+                android:id="@+id/notificationsettinglist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="#cccccc"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.linchpin.periodtracker.widget.HelpButton
+        android:id="@+id/settingsinfobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlbottom"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+         android:background="#0000"
+         android:src="@drawable/help"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </LinearLayout>
+
+</RelativeLayout>

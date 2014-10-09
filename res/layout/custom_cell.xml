@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_cell_graident_backgrouund"
+    android:minHeight="40dip"
+    android:minWidth="40dip" >
+
+    <TextView
+        android:id="@+id/textdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:padding="3dp"
+        android:textColor="@color/newdatecolor"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/editnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:padding="3dp"
+        android:src="@drawable/editnote"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/fetileorOvulationimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:src="@drawable/fertile"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/intimateimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/calendarintimate"
+        android:visibility="gone" />
+
+</FrameLayout>

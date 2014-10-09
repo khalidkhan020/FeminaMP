@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mpt_background"
+    android:gravity="fill_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg_calendar"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+   >
+
+        <TextView
+            android:id="@+id/next_period_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/settingsrelativelayout"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="gravity"
+            android:textColor="@color/co_next_perood"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/prediction_period_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/next_period_date"
+            android:layout_toLeftOf="@+id/settingsrelativelayout"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="gravity"
+            android:textColor="@color/co_prediction_perood"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondtopmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplayout"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/dayleft"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/next_fertile_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".55"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="3dp"
+                android:shadowColor="@color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/co_fertile_window"
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/prediction_fertile_date"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".45"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="3dp"
+                android:shadowColor="@color/white"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textAlignment="gravity"
+                android:textColor="@color/co_fertile_window"
+                android:textSize="17dp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dayleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/start_end_u"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/daylefttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:gravity="center_vertical"
+                android:padding="1dp"
+                android:text="@string/period_start_date"
+                android:textAlignment="gravity"
+                android:textColor="@color/co_period_start"
+                android:textSize="13dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/daylefttext_bot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/taphere"
+                android:textAlignment="gravity"
+                android:textColor="@color/co_taphere"
+                android:textSize="12dp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlbottom"
+        android:layout_below="@+id/secondtopmessage" >
+
+        <RelativeLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/actuallayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hollimg" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:id="@+id/about_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal|center_vertical|left"
+                        android:maxWidth="120dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="8dp"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/co_hollimage_fg"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/peroiodlogrelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/period_logs"
+                     android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/mpt_circle_item_bg_sltr"
+                    android:src="@drawable/ic_periodlog" />
+
+                <TextView
+                    android:id="@+id/lbl_periodlog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/period_logs"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_period_logs"
+                    android:textColor="@color/co_circle_item_text"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/calendarrealativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/peroiodlogrelative"
+                android:layout_marginLeft="145dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lbl_calender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/calendar"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/calendar"
+                    android:text="@string/calendar_new"
+                    android:textColor="@color/co_circle_item_text"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+
+                <ImageButton
+                    android:id="@+id/calendar"
+                     android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/mpt_circle_item_bg_sltr"
+                    android:src="@drawable/ic_calender" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myNotesRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myPartnerRelativeLayout"
+                android:layout_marginLeft="150dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/add_note"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/mpt_circle_item_bg_sltr"
+                    android:src="@drawable/ic_addnote" />
+
+                <TextView
+                    android:id="@+id/lbl_addnot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/add_note"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/add_note"
+                    android:text="@string/addnote_new"
+                    android:textColor="@color/co_circle_item_text"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/settingsrelativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myNotesRelativeLayout"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/settings"
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mpt_circle_item_bg_sltr"
+                    android:src="@drawable/ic_setting" />
+
+                <include
+                    android:id="@+id/includenewfesturer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/settings"
+                    layout="@layout/newfeature" />
+
+                <TextView
+                    android:id="@+id/lbl_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/settings"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/settings"
+                    android:text="@string/my_settings"
+                    android:textColor="@color/co_circle_item_text"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myPartnerRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calendarrealativelayout"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="165dp"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/timeline_btn"
+                     android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/mpt_circle_item_bg_sltr"
+                    android:src="@drawable/patnar_share" />
+
+                <include
+                    android:id="@+id/includenewfesturer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/timeline_btn"
+                    layout="@layout/newfeature" />
+
+                <TextView
+                    android:id="@+id/lbl_timeline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/timeline_btn"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/timeline_btn"
+                    android:text="@string/partner_home"
+                    android:textColor="@color/co_circle_item_text"
+                    android:textSize="18dp"
+                    android:textStyle="italic|bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.linchpin.periodtracker.widget.HelpButton
+        android:id="@+id/homescreenhelpbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlbottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#0000"
+        android:src="@drawable/help" />
+
+    <LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </LinearLayout>
+
+</RelativeLayout>

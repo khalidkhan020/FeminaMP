@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:app="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical" >
+
+    <com.linchpin.periodtracker.widget.BackBar
+        android:id="@+id/changepasscodesettingsback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:text="Sign Up"
+        custom:backbarbackground="@drawable/backbuttonselctor" >
+    </com.linchpin.periodtracker.widget.BackBar>
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:background="#AF28C7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+    <!--     <org.taptwo.android.widget.TitleFlowIndicator
+            android:id="@+id/viewflowindic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            app:clipPadding="5dp"
+            app:customTypeface="fonts/Antic.ttf"
+            app:footerColor="#FFFFC445"
+            app:footerLineHeight="2dp"
+            app:footerTriangleHeight="10dp"
+            app:selectedColor="#FFFFC445"
+            app:selectedSize="12dp"
+            app:textColor="#FFFFFFFF"
+            app:textSize="11dp"
+            app:titlePadding="10dp" >
+        </org.taptwo.android.widget.TitleFlowIndicator>
+    </LinearLayout>
+
+    <org.taptwo.android.widget.ViewFlow
+        android:id="@+id/viewflow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:duplicateParentState="true"
+        android:background="#AF28C7"
+        app:sidebuffer="10" >
+    </org.taptwo.android.widget.ViewFlow> -->
+</LinearLayout>
+</LinearLayout>

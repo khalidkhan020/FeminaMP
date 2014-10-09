@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/default_heading_padding"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="11" >
+
+        <LinearLayout
+            android:id="@+id/date_pan"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/date_pan"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:text="23 August"
+                android:textColor="@color/default_heading_bg"
+                android:textSize="@dimen/timeline_date_text_size_new" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/date"
+                android:text="Sunday"
+                android:textColor="@color/co_next_perood"
+                android:textSize="@dimen/timeline_day_text_size" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/day"
+                android:text="59 kg"
+                android:textColor="@color/default_timeline_fg"
+                android:textSize="@dimen/timeline_small_text_size"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/weight"
+                android:text="98 0 C"
+                android:textColor="@color/default_timeline_fg"
+                android:textSize="@dimen/timeline_small_text_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/firtilty_logo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/day_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/timeline_default_padding"
+                android:text="@string/regularday"
+                android:textColor="@color/co_next_perood" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First day of fertility"
+                android:textColor="@color/default_heading_bg"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/intimate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/intimate_nobg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/timeline_default_padding"
+        android:layout_weight="2"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:padding="@dimen/timeline_default_padding"
+        android:text="@string/timeline_addnote"
+        android:textColor="@color/default_timeline_fg"
+        android:textSize="@dimen/timeline_normal_text_size" />
+
+    <LinearLayout
+        android:id="@+id/img_pan"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/symptoms"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight=".45"
+            android:scrollbars="vertical" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight=".1"
+            android:padding="3dp" />
+
+        <ListView
+            android:id="@+id/moods"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight=".45"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</LinearLayout>

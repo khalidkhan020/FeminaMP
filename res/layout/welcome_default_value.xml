@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mpt_background"
+    android:orientation="vertical" >
+
+    <!--
+    <LinearLayout
+        android:id="@+id/personalsettingsheaderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp" >
+
+        <ImageButton
+            android:id="@+id/personalsettingsback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/backbuttonselctor"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/personalsettings"
+            style="@style/MyDefaultTextAppearanceforheader"
+            android:layout_width="wrap_content"
+            android:paddingLeft="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/my_home"
+            android:textAlignment="gravity" />
+    </LinearLayout>
+    -->
+
+    <com.linchpin.periodtracker.widget.BackBar
+        android:id="@+id/personalsettingsheaderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:text="@string/my_home"
+        custom:backbarbackground="@drawable/backbuttonselctor" >
+    </com.linchpin.periodtracker.widget.BackBar>
+
+    <TextView
+        android:id="@+id/h1"
+        style="@style/MyDefaultTextAppearance"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/personalsettingsheaderlayout"
+        android:text="@string/defaultVaules" />
+
+    <ListView
+        android:id="@+id/personalsettingslistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/h1"
+        android:layout_gravity="center_vertical"
+        android:cacheColorHint="#00000000"
+        android:divider="#cccccc"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personalsettingslistview"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/continue_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sltr_button"
+            android:text="@string/continue1"
+            android:textColor="#ffff"
+            android:textSize="@dimen/activity_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

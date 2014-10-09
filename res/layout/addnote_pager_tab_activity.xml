@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f9f5f9" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/rlbottom"
+            android:background="#f9f5f9"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/addnottitleview"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#f9f5f9"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <com.linchpin.periodtracker.widget.BackBar
+                    android:id="@+id/addbackbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/done"
+                    android:layout_weight=".3"
+                    android:orientation="horizontal"
+                    android:text="@string/notes"
+                    custom:backbarbackground="@drawable/backbuttonselctor" />
+
+                <RelativeLayout
+                    android:id="@+id/nav"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight=".7"
+                    android:background="@drawable/calendar_month_box"
+                    android:orientation="horizontal"
+                    android:weightSum="1" >
+
+                    <ImageButton
+                        android:id="@+id/pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/prebuttonselector"
+                        android:gravity="center_vertical"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:id="@+id/addheadertext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="6dp"
+                        android:textColor="#f3dc8c"
+                        android:textIsSelectable="true"
+                        android:textSize="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/nextbuttonselector"
+                        android:gravity="center_vertical"
+                        android:padding="8dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lltab"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <HorizontalScrollView
+                    android:id="@+id/addnotehorizontalscroll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="none" >
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="@drawable/addnotetabs" >
+                    </TabWidget>
+                </HorizontalScrollView>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0" >
+                </FrameLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/addnoteviewpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rlbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</TabHost>

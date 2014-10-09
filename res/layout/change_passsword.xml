@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECD0EC"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:gravity="center"
+        android:text="Change Password"
+        android:textColor="@color/default_heading_bg"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/old_pass"
+        style="@style/PartnerEditText"
+        android:hint="current password" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/new_password"
+        style="@style/PartnerEditText"
+        android:hint="new password" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip" >
+
+        <EditText
+            android:id="@+id/confirm_pass"
+            style="@style/PartnerEditText"
+            android:layout_margin="0dp"
+            android:hint="confirm password" />
+
+        <CheckBox
+            android:id="@+id/valid"
+            android:layout_gravity="right"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+             android:button="@drawable/pass_checkbox_selecter"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/sltr_button"
+        android:text="Ok"
+        android:textColor="@color/default_heading_fg" />
+
+</LinearLayout>

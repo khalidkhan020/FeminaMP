@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    android:background="@drawable/mpt_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/regionalsettingsheaderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <ImageButton
+            android:id="@+id/regionalsettingsback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/backbuttonselctor" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="@string/settings"
+            style="@style/MyDefaultTextAppearanceforheader"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textregionalsettings"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/regionalsettingsheaderlayout"
+        android:gravity="center_vertical"
+        android:text="@string/regionalsettings"
+       	style="@style/MyDefaultTextAppearance"
+       />
+
+    <ListView
+        android:id="@+id/regionalsettingslistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textregionalsettings"
+        android:layout_centerVertical="true"
+        android:background="@color/newsettingsbackground"
+        android:cacheColorHint="#00000000"
+        android:divider="#cccccc"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/infobuttonlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/rlbottom" >
+
+        <com.linchpin.periodtracker.widget.HelpButton
+            android:id="@+id/regionalsettinginfobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+          android:background="#0000"
+         android:src="@drawable/help"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+       
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

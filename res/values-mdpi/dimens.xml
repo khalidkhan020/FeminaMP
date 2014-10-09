@@ -1,0 +1,4 @@
+<resources>
+<dimen name="welcomescreentextpadding">7dp</dimen>
+<dimen name="welcomescreenbuttonpadding">6dp</dimen>    
+</resources>

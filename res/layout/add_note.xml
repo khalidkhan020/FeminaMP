@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    android:background="@drawable/lightpinkbg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/checkboxlayout"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <EditText
+            android:id="@+id/addnote"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/completerectangle"
+            android:gravity="top|left"
+            android:hint="@string/tapherefornotes"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:maxLength="255"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="#b59e60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkboxlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inforelative"
+        android:background="@color/newdatecolor" >
+
+        <LinearLayout
+            android:id="@+id/intimate_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_bottom"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <CheckBox
+                android:id="@+id/intimate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:button="@drawable/checkboxselector" />
+
+            <TextView
+                android:id="@+id/intimate_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/intimate"
+                android:textColor="@color/newdatecolor"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/inforelative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/newdatecolor"
+        android:padding="10dp" >
+
+        <com.linchpin.periodtracker.widget.HelpButton
+            android:id="@+id/addnoteinfobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"           
+             android:background="#0000"
+         android:src="@drawable/help" />
+    </RelativeLayout>
+
+</RelativeLayout>

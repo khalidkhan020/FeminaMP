@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/my_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".30"
+        android:padding="10dip" >
+
+        <ImageView
+            android:id="@+id/my_pic"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/cool_girl"
+            android:textColor="@color/mpt_button_txt" />
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/my_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/my_pic"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="My Name"
+            android:textColor="@color/default_heading_bg"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/my_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/my_name"
+            android:layout_below="@+id/my_name"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="2"
+            android:text="My Email"
+            android:textColor="#E6518F"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/my_button_pan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_pic"
+            android:layout_marginTop="85dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/requestmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/Requestmessage"
+                android:textColor="@color/default_timeline_fg" />
+
+            <Button
+                android:id="@+id/my_button1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/mpt_button_sltr"
+                android:padding="5dp"
+                android:text="Button"
+                android:textColor="@color/mpt_button_txt"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_weight=".36" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/shp_partner_pan_bg"
+            android:padding="15dip" >
+
+            <ImageView
+                android:id="@+id/partner_pic"
+                android:layout_width="100dip"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:background="#ffff"
+                android:src="@drawable/cool_boy" />
+
+            <TextView
+                android:id="@+id/partner_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/partner_name"
+                android:layout_below="@+id/partner_name"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="2"
+                android:scrollHorizontally="true"
+                android:text="Partner Email"
+                android:textColor="#E6518F"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/partner_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/partner_pic"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                android:layout_toRightOf="@+id/partner_pic"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Partner name"
+                android:textColor="@color/default_heading_bg"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/partner_button_pan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/partner_pic"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dip" >
+
+                <Button
+                    android:id="@+id/partner_button1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/mpt_button_sltr"
+                    android:drawablePadding="0dp"
+                    android:padding="10dp"
+                    android:text="Button"
+                    android:textColor="@color/mpt_button_txt" />
+
+                <Button
+                    android:id="@+id/partner_button2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/mpt_button_sltr"
+                    android:drawablePadding="0dp"
+                    android:padding="10dp"
+                    android:text="Button"
+                    android:textColor="@color/mpt_button_txt" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/partner_button_pan"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/awaiting_reminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/awaiting_reminder_str"
+                    android:textColor="#E6518F"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/relation"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/ic_accepted" />
+    </FrameLayout>
+ 
+    <include
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".33"
+        layout="@layout/past_list" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right" >
+
+        <com.linchpin.periodtracker.widget.HelpButton
+            android:id="@+id/partnerinvitehelpbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:src="@drawable/help" />
+    </RelativeLayout>
+
+</LinearLayout>

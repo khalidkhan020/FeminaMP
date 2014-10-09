@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mpt_background"
+    android:orientation="vertical" >
+
+    <com.linchpin.periodtracker.widget.BackBar
+        android:id="@+id/back_pan"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@color/default_heading_fg"
+        android:orientation="horizontal"
+        android:text="@string/partner_home"
+        custom:backbarbackground="@drawable/backbuttonselctor" />
+
+    <com.viewpagerindicator.TitlePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_heading_bg"
+        android:padding="10dip" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+    </LinearLayout>
+
+</LinearLayout>

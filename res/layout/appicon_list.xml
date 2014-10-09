@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+      xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mpt_background"
+    android:orientation="vertical" >
+
+    <com.linchpin.periodtracker.widget.BackBar
+        android:id="@+id/changeiconsettingsheaderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:text="@string/settings"
+        custom:backbarbackground="@drawable/backbuttonselctor" >
+    </com.linchpin.periodtracker.widget.BackBar>
+
+    <com.linchpin.periodtracker.widget.Header
+        android:id="@+id/changeiconsettings"
+        style="@style/MyDefaultTextAppearance"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/changeiconsettingsheaderlayout"
+        android:text="@string/app_iconandname" />
+    <!--
+    <LinearLayout
+        android:id="@+id/changeiconsettingsheaderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <ImageButton
+            android:id="@+id/changeiconsettingsback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/backbuttonselctor"
+            android:text="@string/back" />
+
+        <TextView
+            style="@style/MyDefaultTextAppearanceforheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/settings"
+            android:textAlignment="gravity" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/changeiconsettings"
+        style="@style/MyDefaultTextAppearance"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/changeiconsettingsheaderlayout"
+        android:text="@string/select_app_iconandname" />
+    -->
+
+    <GridView
+        android:id="@+id/appicongrid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeiconsettings"
+         android:layout_above="@+id/rlbottom"
+        android:adjustViewBounds="true"
+        android:background="@color/newsettingsbackground"
+        android:cacheColorHint="#00000000"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="2dp"
+        android:numColumns="auto_fit"
+        android:padding="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/infobuttonlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" >
+
+        <com.linchpin.periodtracker.widget.HelpButton
+            android:id="@+id/changeiconsettingsinfobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="#0000"
+            android:src="@drawable/help"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

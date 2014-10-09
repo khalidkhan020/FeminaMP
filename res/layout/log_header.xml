@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/simpleperiodlogtextforperiodlength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dp"
+        
+        android:textColor="@color/newdatecolor"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/periodlogtextforperiodlength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:textColor="@color/newdatecolor"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/simpleperiodlogtextforcyclelength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/simpleperiodlogtextforperiodlength"
+        android:layout_margin="6dp"
+       
+        android:textColor="@color/newdatecolor"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/periodlogtextforcyclelength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/periodlogtextforperiodlength"
+        android:layout_margin="6dp"
+        android:textColor="@color/newdatecolor"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/startendlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simpleperiodlogtextforcyclelength"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="3dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/startdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/startend_date_btn"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:padding="3dp"
+                android:text="@string/start_date"
+                android:textColor="@color/newdatecolor"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/startdatetext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/period_start_date"
+                android:textColor="@color/newdatecolor"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                  android:id="@+id/t2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:padding="3dp"
+                android:text="@string/taphere"
+                android:textColor="@color/newdatecolor"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/enddate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/startend_date_btn"
+            android:orientation="vertical" >
+
+            <TextView
+                  android:id="@+id/t3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:padding="3dp"
+                android:text="@string/end_date"
+                android:textColor="@color/newdatecolor"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/enddatetext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/period_end_date"
+                android:textColor="@color/newdatecolor"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                  android:id="@+id/t4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:padding="3dp"
+                android:text="@string/taphere"
+                android:textColor="@color/newdatecolor"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

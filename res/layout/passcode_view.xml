@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.linchpin.periodtracker.widget.MPTRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:background="@drawable/mpt_background"
+    android:orientation="vertical" >
+
+    <com.linchpin.periodtracker.widget.BackBar
+        android:id="@+id/passcodesheaderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/passcode"
+        android:orientation="horizontal" >
+    </com.linchpin.periodtracker.widget.BackBar>
+
+    <com.linchpin.periodtracker.widget.Header
+        android:id="@+id/passwordsettings"
+        style="@style/MyDefaultTextAppearance"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/passcodesheaderlayout"
+        android:text="@string/passcode" />
+
+    <ListView
+        android:id="@+id/passcodelist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordsettings"
+        android:background="@color/newsettingsbackground"
+        android:cacheColorHint="#000000"
+        android:divider="#cccccc"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/infobuttonlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/rlbottom" >
+
+        <com.linchpin.periodtracker.widget.HelpButton
+            android:id="@+id/passcodesettinginfobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="#0000"
+            android:src="@drawable/help" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</com.linchpin.periodtracker.widget.MPTRelativeLayout>

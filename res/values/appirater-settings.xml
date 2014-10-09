@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+         Change the market_url for other markets i.e. Amazon App Store
+    	Google Play = market://details?id=%s
+    	Amazon App Store = http://www.amazon.com/gp/mas/dl/android?p=%s
+    -->
+    <string name="appirator_app_title">MyPeriod Tracker</string>
+    <string name="appirator_market_url">market://details?id=com.linchpin.myperiodtracker</string>
+
+    <integer name="appirator_days_until_prompt">3</integer>
+    <integer name="appirator_launches_until_prompt">1</integer>
+    <!-- Set this to 0 to remind every launch -->
+    <integer name="appirator_days_before_reminding">1</integer>
+    <!-- Change to true to show every time, for testing -->
+    <!-- <bool name="appirator_test_mode">false</bool> -->
+    <!-- Change modify button colors -->
+    <!--MPT Default Button  -->
+    <color name="mpt_button_nor_strt">@color/default_heading_bg</color>
+    <color name="mpt_button_nor_end">@color/mpt_button_nor_strt</color>
+    <color name="mpt_button_nor_mid">@color/mpt_button_nor_strt</color>
+    <color name="mpt_button_presed_strt">#AF61B2</color>
+    <color name="mpt_button_pressed_end">@color/mpt_button_presed_strt</color>
+    <color name="mpt_button_pressed_mid">@color/mpt_button_presed_strt</color>
+    <color name="mpt_button_txt">#FFFFFFFF</color>
+    
+    
+
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/timeline_top_img"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/next_period_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:text="Next Expected Period"
+                android:textAlignment="gravity"
+                android:textColor="@color/caldroid_white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/prediction_period_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="14,2013"
+                android:textAlignment="gravity"
+                android:textColor="@color/co_next_perood"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/next_period_day_deatails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Friday"
+                android:textAlignment="gravity"
+                android:textColor="@color/co_next_perood"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/about_day"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Start Date"
+                    android:maxLines="2"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/default_heading_bg" />
+
+             <!--    <TextView
+                    android:id="@+id/tStartdays"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="11/08/2014"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/default_heading_bg" />
+
+                <TextView
+                    android:id="@+id/ttstartday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Thuesday"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/default_heading_bg" /> -->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/next_fertile_Date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/next_period_date"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Next Expected Fertile"
+                android:textAlignment="gravity"
+                android:textColor="@color/caldroid_white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/prediction_fertile_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="14,2013"
+                android:textAlignment="gravity"
+                android:textColor="@color/co_next_perood"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/prediction_period_day_deatails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sunday"
+                android:textAlignment="gravity"
+                android:textColor="@color/co_next_perood"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/partner_main_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#0000"
+        android:dividerHeight="4dip" >
+    </ListView>
+
+</LinearLayout>

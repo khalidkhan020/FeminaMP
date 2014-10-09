@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="6dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="4dp"
+    android:paddingTop="6dp"
+    android:weightSum="1" >
+
+    <TextView
+        android:id="@+id/starttextdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".4"
+        android:gravity="left"
+        android:textAlignment="gravity"
+        android:textColor="@color/newdatecolor"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/endtextdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".35"
+        android:gravity="left"
+        android:textAlignment="gravity"
+        android:textColor="@color/newdatecolor"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/cyclelengthlistrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="@color/newdatecolor"
+        android:textSize="16dp" />
+
+</LinearLayout>

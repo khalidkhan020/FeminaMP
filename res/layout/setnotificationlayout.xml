@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mpt_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/notificationheaderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <ImageButton
+            android:id="@+id/notificationsettingsback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/backbuttonselctor"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/notification"
+            style="@style/MyDefaultTextAppearanceforheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/settings" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notificationsettings"
+        style="@style/MyDefaultTextAppearance"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/notificationheaderlayout"
+        android:text="@string/notificationsettings" />
+
+    <ListView
+        android:id="@+id/notificationlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notificationsettings"
+        android:background="@color/newsettingsbackground"
+        android:cacheColorHint="#00000000"
+        android:divider="#cccccc"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/infobuttonlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/rlbottom" >
+
+        <com.linchpin.periodtracker.widget.HelpButton
+            android:id="@+id/notificationsettinginfobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+             android:background="#0000"
+         android:src="@drawable/help"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

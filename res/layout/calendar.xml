@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ba1fc7"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/calendar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottominfobar"
+            android:layout_below="@+id/calendar1"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" >
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/calendornotes"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/mpt_note_bg"
+                    android:hint="@string/tapherefornotes"
+                    android:padding="10dp"
+                    android:textColor="#820787" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".4"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/namemoods"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:padding="6dp"
+                        android:text="@string/moods"
+                        android:textColor="@color/newdatecolor" />
+
+                    <com.meetme.android.horizontallistview.HorizontalListView
+                        android:id="@+id/moodsoncalendarlist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dip"
+                        android:background="#f3dc8c"
+                        android:scrollbars="horizontal" />
+
+                    <TextView
+                        android:id="@+id/namesymtoms"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:padding="6dp"
+                        android:text="@string/symptoms"
+                        android:textColor="@color/newdatecolor" />
+
+                    <com.meetme.android.horizontallistview.HorizontalListView
+                        android:id="@+id/Symtomsoncalendarlist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="#f3dc8c"
+                        android:scrollbars="horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/weightoncalendar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:padding="6dp"
+                            android:text="@string/weight"
+                            android:textColor="@color/newdatecolor" />
+
+                        <TextView
+                            android:id="@+id/temperatureoncalendar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:gravity="right"
+                            android:padding="6dp"
+                            android:text="@string/tem"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/newdatecolor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/l1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:background="#f3dc8c"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/weightoncalendarvaule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="5dp"
+                            android:textColor="@color/datecolor" />
+
+                        <TextView
+                            android:id="@+id/temperatureoncalendarvaule"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#0000"
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="20dp"
+                            android:textColor="@color/datecolor" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/bottominfobar"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_above="@+id/rlbottom"
+            android:background="@drawable/bottom_img" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/calendarinfobutton"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".23"
+                    android:drawableLeft="@drawable/period"
+                    android:drawablePadding="3dip"
+                    android:paddingLeft="3dp"
+                    android:text="@string/period_lbl"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".23"
+                    android:drawableLeft="@drawable/fertile"
+                    android:drawablePadding="3dip"
+                    android:paddingLeft="3dp"
+                    android:text="@string/fertile"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".3"
+                    android:drawableLeft="@drawable/ovulation"
+                    android:drawablePadding="3dip"
+                    android:paddingLeft="3dp"
+                    android:text="@string/ovulation"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".26"
+                    android:drawableLeft="@drawable/calendarintimate"
+                    android:drawablePadding="3dip"
+                    android:paddingLeft="3dp"
+                    android:text="@string/intimate"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.linchpin.periodtracker.widget.HelpButton
+                android:id="@+id/calendarinfobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:background="#0000"
+                android:src="@drawable/help" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rlbottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

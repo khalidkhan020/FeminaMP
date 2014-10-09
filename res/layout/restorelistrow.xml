@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/nextimage"
+        android:layout_weight=".98"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="7dp" >
+
+        <TextView
+            android:id="@+id/listitem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dp"
+          
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/listitem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp"
+            android:textColor="#666666"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical|right"
+        android:focusable="false"
+        android:clickable="false"
+        android:gravity="right"
+        android:paddingRight="2dp"
+        android:textColor="@color/newdatecolor" />
+
+</LinearLayout>

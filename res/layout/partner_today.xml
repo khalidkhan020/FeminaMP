@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+      >
+         <LinearLayout 
+             android:layout_height="match_parent"
+             android:layout_width="wrap_content"></LinearLayout>
+        <TextView
+            android:id="@+id/next_period_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="gravity"
+            android:text="Next Expected Period"
+            android:textColor="@color/co_next_perood"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/prediction_period_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/next_period_date"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="gravity"
+            android:textColor="@color/co_prediction_perood"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/next_fertile_Date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" android:textSize="20sp"
+        android:text="Period day"
+        android:textColor="@color/co_mpt_orange"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/prediction_fertile_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="15-12-2014"
+        android:textColor="@color/default_heading_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F4D7F4"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/about_day"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="23-12-2014"
+        android:textColor="@color/default_heading_bg"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/notes_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@color/default_heading_bg"
+        android:padding="4dp"
+        android:text="Notes"
+        android:textColor="@color/default_heading_fg"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/today_notes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/shp_partner_pan_bg"
+        android:padding="8dp"
+        android:text="httyj yjy  jyjy"
+        android:textColor="@color/default_heading_bg" />
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/default_heading_bg"
+        android:padding="4dp"
+        android:text="Moods "
+        android:textColor="@color/default_heading_fg"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lst_moods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight=".4" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/default_heading_bg"
+        android:padding="4dp"
+        android:text="Symptoms"
+        android:textColor="@color/default_heading_fg"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lst_symptoms"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_weight=".4" >
+    </ListView>
+<RelativeLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <com.linchpin.periodtracker.widget.HelpButton
+        android:id="@+id/partner_today_helpbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="#0000"
+        android:src="@drawable/help" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+   </RelativeLayout>
+</LinearLayout>

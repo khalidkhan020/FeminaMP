@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mpt_background"
+    android:orientation="vertical" >
+
+    <com.linchpin.periodtracker.widget.BackBar
+        android:id="@+id/selectGoalbackbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="3dp"
+        android:orientation="horizontal"
+        android:text="@string/my_home" />
+
+    <TextView
+        android:id="@+id/h1"
+        style="@style/MyDefaultTextAppearance"
+        android:paddingLeft="14dp"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="@string/goal_message" >
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/men_cal_li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sltr_partner_setting_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp" >
+
+            <TextView
+                android:id="@+id/men_cal"
+                style="@style/ListHeading"
+                android:paddingRight="40dp"
+                android:text="@string/menstrual_calendar" />
+
+            <TextView
+                style="@style/ListDes"
+                android:paddingRight="40dp"
+                android:text="@string/menstrual_calendar_details" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/next_info" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/welcome_border" />
+
+    <FrameLayout
+        android:id="@+id/try_to_con_li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sltr_partner_setting_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp" >
+
+            <TextView
+                android:id="@+id/try_to_con"
+                style="@style/ListHeading"
+                android:paddingRight="40dp"
+                android:text="@string/trying_to_conceive" />
+
+            <TextView
+                style="@style/ListDes"
+                android:paddingRight="40dp"
+                android:text="@string/trying_to_conceive_details" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/next_info" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/welcome_border" />
+
+    <FrameLayout
+        android:id="@+id/log_to_start_li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sltr_partner_setting_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp" >
+
+            <TextView
+                android:id="@+id/log_to_start"
+                style="@style/ListHeading"
+                android:paddingRight="40dp"
+                android:text="@string/start_sharing_data" />
+
+            <TextView
+                style="@style/ListDes"
+                android:paddingRight="40dp"
+                android:text="@string/start_sharing_data_details" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/next_info" />
+    </FrameLayout>
+
+</LinearLayout>

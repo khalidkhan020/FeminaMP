@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content"
+        android:background="@color/newsettingsbackground"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/shar_setting_pan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/shar_setting"
+                    style="@style/MyDefaultTextAppearance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/sharing_stng" />
+
+                <RelativeLayout
+                    android:id="@+id/periods"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/pt"
+                        style="@style/PartnerSettingText"
+                        android:layout_toLeftOf="@+id/cb_periods"
+                        android:text="@string/shr_period" />
+
+                    <TextView
+                        android:id="@+id/pd"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/pt"
+                        android:layout_toLeftOf="@+id/cb_periods"
+                        android:text="@string/shr_period_des" />
+
+                    <CheckBox
+                        android:id="@+id/cb_periods"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkboxselector_partner"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/moods"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/mt"
+                        style="@style/PartnerSettingText"
+                        android:layout_toLeftOf="@+id/cb_moods"
+                        android:text="@string/shr_mood" />
+
+                    <TextView
+                        android:id="@+id/md"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/mt"
+                        android:layout_toLeftOf="@+id/cb_moods"
+                        android:text="@string/shr_mood_des" />
+
+                    <CheckBox
+                        android:id="@+id/cb_moods"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkboxselector_partner"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/symptoms"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/st"
+                        style="@style/PartnerSettingText"
+                        android:layout_toLeftOf="@+id/cb_symptoms"
+                        android:text="@string/shr_symptoms" />
+
+                    <TextView
+                        android:id="@+id/sd"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/st"
+                        android:layout_toLeftOf="@+id/cb_symptoms"
+                        android:text="@string/shr_symptoms_des" />
+
+                    <CheckBox
+                        android:id="@+id/cb_symptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkboxselector_partner"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/pills"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/pit"
+                        style="@style/PartnerSettingText"
+                        android:layout_toLeftOf="@+id/cb_pills"
+                        android:text="@string/shr_pill" />
+
+                    <TextView
+                        android:id="@+id/pid"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/pit"
+                        android:layout_toLeftOf="@+id/cb_pills"
+                        android:text="@string/shr_pill_des" />
+
+                    <CheckBox
+                        android:id="@+id/cb_pills"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkboxselector_partner"
+                        android:checked="false" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/notes"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/nt"
+                        style="@style/PartnerSettingText"
+                        android:layout_toLeftOf="@+id/cb_notes"
+                        android:text="@string/shr_note" />
+
+                    <TextView
+                        android:id="@+id/nd"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/nt"
+                        android:layout_toLeftOf="@+id/cb_notes"
+                        android:text="@string/shr_note_des" />
+
+                    <CheckBox
+                        android:id="@+id/cb_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/cb_pills"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkboxselector_partner"
+                        android:checked="false" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:id="@+id/app_setting_pan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/app_setting"
+                    style="@style/MyDefaultTextAppearance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/partner_stng" />
+
+                <RelativeLayout
+                    android:id="@+id/notifications"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/ntt"
+                        style="@style/PartnerSettingText"
+                        android:layout_toLeftOf="@+id/cb_notify"
+                        android:text="@string/shr_notify" />
+
+                    <TextView
+                        android:id="@+id/ntd"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/ntt"
+                        android:layout_toLeftOf="@+id/cb_notify"
+                        android:text="@string/shr_notify_des" />
+
+                    <CheckBox
+                        android:id="@+id/cb_notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkboxselector_partner"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/sync_data"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/pd"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/sy"
+                        android:text="@string/shr_syncdata_des" />
+
+                    <TextView
+                        android:id="@+id/sy"
+                        style="@style/PartnerSettingText"
+                        android:text="@string/shr_syncdata" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/update_profile"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/ud"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/up"
+                        android:text="@string/shr_updateprof_des" />
+
+                    <TextView
+                        android:id="@+id/up"
+                        style="@style/PartnerSettingText"
+                        android:text="@string/shr_updateprof" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/remove_partner"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/txt_remove_partner_d"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/txt_remove_partner"
+                        android:text="@string/shr_removepartner_des" />
+
+                    <TextView
+                        android:id="@+id/txt_remove_partner"
+                        style="@style/PartnerSettingText"
+                        android:text="@string/shr_removepartner" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/change_password"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/change_password_d"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/change_password_t"
+                        android:text="@string/shr_changepass_des" />
+
+                    <TextView
+                        android:id="@+id/change_password_t"
+                        style="@style/PartnerSettingText"
+                        android:text="@string/shr_changepass" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#cccccc" />
+
+                <RelativeLayout
+                    android:id="@+id/signout"
+                    style="@style/PartnerSettingRow" >
+
+                    <TextView
+                        android:id="@+id/signout_d"
+                        style="@style/PartnerSettingDes"
+                        android:layout_below="@+id/signout_t"
+                        android:text="@string/shr_logout_des" />
+
+                    <TextView
+                        android:id="@+id/signout_t"
+                        style="@style/PartnerSettingText"
+                        android:text="@string/shr_logout" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+  <!--   <com.linchpin.periodtracker.widget.HelpButton
+        android:id="@+id/partnersettinghelpbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/request"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#0000"
+        android:src="@drawable/help" /> -->
+
+<!-- </RelativeLayout> -->

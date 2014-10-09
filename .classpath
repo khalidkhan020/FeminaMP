@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/linchpin/periodtracker/utlity/CalendarAsyncTask.java|com/linchpin/periodttracker/database/PTProjections.java|com/linchpin/periodtracker/fragments/FertileDaysFragments.java|com/linchpin/periodtracker/fragments/OvulationDaysFragments.java|com/linchpin/periodtracker/fragments/PastFertileRecordsFragments.java|com/linchpin/periodtracker/fragments/PastPeriodRecordListFragment.java|com/linchpin/periodtracker/fragments/PerdictionFertileRecordsFragments.java|com/linchpin/periodtracker/fragments/PastOvulationRecordsFragments.java|com/linchpin/periodtracker/fragments/PerdictionOvulationRecordsFragments.java|com/linchpin/periodtracker/fragments/FertileDaysFragments.java|com/linchpin/periodtracker/fragments/OvulationDaysFragments.java|com/linchpin/periodtracker/fragments/PastFertileRecordsFragments.java|com/linchpin/periodtracker/fragments/PastOvulationRecordsFragments.java|com/linchpin/periodtracker/fragments/PastPeriodRecordListFragment.java|com/linchpin/periodtracker/fragments/PerdictionFertileRecordsFragments.java|com/linchpin/periodtracker/fragments/PerdictionOvulationRecordsFragments.java|com/linchpin/periodtracker/utlity/CalendarAsyncTask.java|com/linchpin/periodtracker/utlity/Theme.java|com/linchpin/periodtracker/receiver/GlobalTouchService.java|com/example/app42sample/MainActivity.java|com/linchpin/periodtracker/gcm/MainActivity.java|com/linchpin/periodtracker/utlity/MagicTextView.java|com/linchpin/periodtracker/adpators/DiffAdapter.java|com/linchpin/periodtracker/partnersharing/PartnerSharing.java|com/linchpin/periodtracker/partnersharing/TestFragmentAdapter.java|com/linchpin/periodtracker/partnersharing/BaseSampleActivity.java|com/linchpin/periodtracker/partnersharing/SharingCalender.java|com/linchpin/periodtracker/widget/AnimatedExpandableListAdapter.java|com/linchpin/periodtracker/widget/MPTExpendibleListView.java|com/linchpin/periodtracker/view/Welcome_Default_Value.java|com/linchpin/periodtracker/partnersharing/PartnerToday.java|com/linchpin/periodtracker/view/Welcome_Setting.java|com/linchpin/periodtracker/adpators/Welcome_DefaultAdaptor.java|com/linchpin/periodtracker/view/MyDatePickerDialog.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="E:/NewWorkSpace/libs/joda-time-2.2.jar"/>
+	<classpathentry kind="lib" path="E:/NewWorkSpace/libs/App42_ANDROID_SDK_2.7.jar"/>
+	<classpathentry kind="lib" path="E:/NewWorkSpace/libs/gcm.jar"/>
+	<classpathentry kind="lib" path="E:/NewWorkSpace/libs/GoogleAdMobAdsSdk-6.4.1.jar"/>
+	<classpathentry kind="lib" path="E:/NewWorkSpace/libs/libGoogleAnalyticsServices.jar"/>
+	<classpathentry kind="lib" path="E:/NewWorkSpace/libs/android-support-v4.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

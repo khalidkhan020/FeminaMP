@@ -1,0 +1,160 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="PartnerSettingText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/list_heading_fg</item>
+    </style>
+
+    <style name="PartnerSettingDes" parent="PartnerSettingText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/list_des_fg</item>
+    </style>
+
+    <style name="AccordianScreen">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/sltr_partner_setting_bg</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ListHeading" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/newdatecolor</item>
+        <item name="android:textSize">@dimen/default_heading_text_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AccordianHeading" parent="ListHeading">
+        <item name="android:drawableLeft">@drawable/drop_down</item>
+        <item name="android:drawablePadding">6dp</item>
+    </style>
+
+    <style name="ListDes" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:textColor">@color/list_des_fg</item>
+        <item name="android:textSize">@dimen/timeline_small_text_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AccordianDes" parent="ListDes">
+        <item name="android:layout_marginLeft">32dp</item>
+    </style>
+
+    <style name="PartnerSettingRow">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="PartnerEditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:background">@drawable/sltr_edittext</item>
+        <item name="android:ems">10</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/default_heading_bg</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="MyDashBoardText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/co_circle_item_text</item>
+        <item name="android:textSize">@dimen/dashboard_text</item>
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+
+    <style name="MyDashBoardNavITM">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="PartnerCalenderDD">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:textColor">@color/default_heading_bg</item>
+        <item name="android:paddingBottom">2dip</item>
+    </style>
+
+    <style name="PartnerCalenderDDH" parent="PartnerCalenderDD">
+        <item name="android:textColor">@color/default_heading_bg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/shp_partner_setting_press</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="TransparentProgressDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ListView">
+        <item name="android:listSelector">@drawable/mpt_button_sltr</item>
+    </style>
+
+    <style name="MptButtonTheme" parent="@style/AppTheme">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@color/default_heading_bg</item>
+        <item name="android:textColor">@color/mpt_button_txt</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Text View Settings Header -->
+    <style name="MyDefaultTextAppearanceforheader" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Text View Settings small header -->
+    <style name="MyDefaultTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">9dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/heading_fg</item>
+        <item name="android:background">@color/heading_bg</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--
+     Button
+    <style name="MyDefaultTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/yellowtextcolor</item>
+        <item name="android:background">#820787</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    -->
+
+</resources>

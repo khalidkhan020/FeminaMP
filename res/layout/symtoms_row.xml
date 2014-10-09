@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_margin="10dp"
+    android:padding="2dp"
+    android:id="@+id/content"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+
+    <ImageView
+        android:id="@+id/symtomimageicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:focusable="false"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/symptomstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/symtomimageicon"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="1111111111111"
+        android:textColor="@color/datecolor"
+        android:textSize="18dp" />
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:numStars="3"
+        android:progressDrawable="@drawable/ratingbarselector"
+        android:rating="3"
+        android:stepSize="1" />
+
+</RelativeLayout>

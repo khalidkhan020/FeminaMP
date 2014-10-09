@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Karbon, Ace, S3, Micromax Xperia, Spice -->
+     <string name="ads_test_id">A5706E051EC3016F9A0005521FFC590C, 3CE2E758B585E0994382AFA847C1B6A3, 417F89A06E2C77A15763172B2CD0DF53, C0F82A5D7ED12C4B263625FFB3AD9304,BD1130E01AFF60C19AFB3E6FA18D770F, D4BF940E3717A9662D7135580C20E654</string>    
+     <string-array name="arr_ads_test_id">
+             <item>A5706E051EC3016F9A0005521FFC590C</item> <!-- Karbon -->
+    		 <item>3CE2E758B585E0994382AFA847C1B6A3</item> <!-- Ace -->
+    		 <item>417F89A06E2C77A15763172B2CD0DF53</item> <!-- S3 -->
+    		 <item>C0F82A5D7ED12C4B263625FFB3AD9304</item> <!-- Micromax -->
+    		 <item>BD1130E01AFF60C19AFB3E6FA18D770F</item> <!-- Xperia -->
+    		 <item>D4BF940E3717A9662D7135580C20E654</item> <!-- Spice -->
+     </string-array>
+
+</resources>

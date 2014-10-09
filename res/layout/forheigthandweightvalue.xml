@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/heightandwightvalue"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/newsettingsbackground"
+    android:orientation="vertical" >
+
+     <TextView
+        android:id="@+id/tileforhieghtandweight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/newdatecolor" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="@color/newdatecolor" />
+ 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:text="@string/enterthevalue"
+        android:textColor="@color/newdatecolor" />
+
+    <EditText
+        android:id="@+id/heightweightvalue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/mpt_edit_text_sltr"
+        android:textColor="@color/newdatecolor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/valuecancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".5"
+            android:text="@string/cancel"
+            android:background="@color/newdatecolor"
+            android:textColor="@color/yellowtextcolor" />
+
+        <Button
+            android:id="@+id/setvalue"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="40dp"
+            android:layout_weight=".5"
+            android:text="@string/set"
+            android:background="@color/newdatecolor"
+            android:textColor="@color/yellowtextcolor" />
+    </LinearLayout>
+
+</LinearLayout>

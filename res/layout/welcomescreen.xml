@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mpt_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="left"
+            android:src="@drawable/top_img" />
+
+        <TextView
+            android:id="@+id/welcomemessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="left"
+            android:textSize="15sp"
+            android:text="@string/welcome_message"
+            android:textColor="@color/list_des_fg" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/welcomescreentextpadding"
+            android:padding="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/terms_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/checkcondition"
+                android:clickable="true"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="7dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="@string/conditions"
+                android:textColor="@color/welcome_text_color" />
+
+            <CheckBox
+                android:id="@+id/checkcondition"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:button="@drawable/checkboxselector_welcome"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/welcomescreenbuttonpadding"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/accept_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:background="@drawable/sltr_button"
+                android:text="@string/accept"
+                android:textColor="#ffff" />
+
+            <Button
+                android:id="@+id/cancel_welcome"
+                android:layout_width="wrap_content"  android:textSize="17sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/nobackground"
+                android:text="@string/cancel"
+                android:textColor="#820787" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

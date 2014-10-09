@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ack_lst">
+        <item>German    :    Klara Galova</item>
+        <item>Italian   :    Susanna Lassi</item>
+    </string-array>
+    <string-array name="default_settings">
+        <item>@string/Periodlength</item>
+        <item>@string/cyclelength</item>
+        <item>@string/ovulationdaylength</item>
+        <item>@string/averagelength</item>
+        <item>@string/hieght</item>
+        <item>@string/weight</item>
+        <item>@string/temprature</item>
+    </string-array>
+    <string-array name="default_settings_wel">
+        <item>@string/setstartdate</item>
+        <item>@string/setenddate</item>
+        <item>@string/Periodlength</item>
+        <item>@string/cyclelength</item>
+        <item>@string/ovulationdaylength</item>
+            </string-array>
+    <string-array name="appearence_settings">
+        <item>@string/app_iconandname</item>
+        <item>@string/setdaysofweek</item>
+        <item>@string/theme</item>
+    </string-array>
+    <string-array name="notification_settings">
+        <item>@string/period_alert</item>
+        <item>@string/fertile_alert</item>
+        <item>@string/ovulation_alert</item>
+    </string-array>
+    <string-array name="regional_settings">
+        <item>@string/hieghtunit</item>
+        <item>@string/weightunit</item>
+        <item>@string/bodytempratureunit</item>
+        <item>@string/changelanugae</item>
+        <item>@string/changedateformat</item>
+    </string-array>
+    <string-array name="restore_settings">
+        <item>@string/restore</item>
+        <item>@string/backup</item>
+    </string-array>
+    <string-array name="personal_settings">
+        <item>@string/defaultVaules</item>
+        <item>@string/pregnancymode</item>
+        <item>@string/notifications</item>
+    </string-array>
+    <string-array name="application_settings">
+        <item>@string/butfullversion</item>
+        <item>@string/apperence</item>
+   <!--      <item>@string/show_tip</item> -->
+        <item>@string/restoreandbackup</item>
+        <item>@string/regionalsettings</item>
+        <item>@string/passwordprotection</item>
+        <item>@string/info</item>
+    </string-array>
+    <string-array name="passcode_settings">
+        <item>@string/changepasscode</item>
+        <item>@string/clearpasscode</item>
+    </string-array>
+    <string-array name="length_settings">
+        <item>@string/manual_settings</item>
+        <item>@string/average_settings</item>
+    </string-array>
+    <string-array name="setpasscode_settings">
+        <item>@string/setpasscode</item>
+    </string-array>
+
+</resources>

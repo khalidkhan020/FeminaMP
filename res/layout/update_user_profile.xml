@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECD0EC"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Update Profile"
+        android:textColor="@color/default_heading_bg"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/fname"
+        style="@style/PartnerEditText"
+        android:hint="first name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/lname"
+        style="@style/PartnerEditText"
+        android:hint="last name"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkboxselector_partner"
+            android:checked="true"
+            android:text="Female"
+            android:textColor="@color/default_heading_bg" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkboxselector_partner"
+            android:text="Male"
+            android:textColor="@color/default_heading_bg" />
+    </RadioGroup>
+    <!--
+         <EditText
+        android:id="@+id/phone"
+        style="@style/PartnerEditText"
+        android:hint="phone number"
+        android:inputType="phone" />
+    -->
+
+    <TextView
+        android:id="@+id/dob"
+        style="@style/PartnerEditText"
+        android:clickable="true"
+        android:editable="false"
+        android:hint="date of birth" />
+
+    <Spinner
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sltr_button"
+        android:text="Update"
+        android:textColor="@color/default_heading_fg" />
+
+</LinearLayout>

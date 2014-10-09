@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/mpt_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/preganancysettingsheaderlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <ImageButton
+            android:id="@+id/pregnancyback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/backbuttonselctor"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/personalsettings"
+            style="@style/MyDefaultTextAppearanceforheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/settings" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pregnancysettings"
+        style="@style/MyDefaultTextAppearance"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/preganancysettingsheaderlayout"
+        android:text="@string/pregnancymode" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/infobuttonlayout"
+        android:layout_below="@+id/pregnancysettings"
+        android:layout_margin="5dp"
+        android:background="@color/view_bg" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/pregnancymodeon"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/newdatecolor"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="gravity"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/estimiteddate"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/pregnancymodeon"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/newdatecolor"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="gravity"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/homescreendisplaymessage"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/estimiteddate"
+                android:layout_margin="8dp"
+                android:background="@color/newdatecolor"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="gravity"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/mistakelyonpregnancymode"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/homescreendisplaymessage"
+                android:layout_margin="8dp"
+                android:background="@color/newdatecolor"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="gravity"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/pregnancymodeoff"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/mistakelyonpregnancymode"
+                android:layout_margin="8dp"
+                android:background="@color/newdatecolor"
+                android:gravity="center_vertical|center_horizontal"
+                android:textAlignment="gravity"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/infobuttonlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/rlbottom" >
+
+        <com.linchpin.periodtracker.widget.HelpButton
+            android:id="@+id/pregnancyinfobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+             android:background="#0000"
+         android:src="@drawable/help" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

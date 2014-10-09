@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="co_share_color">#C862CC</color>
+    <!-- New Theme Color -->
+    <!-- Default Colors -->
+    <color name="heading_bg">#820787</color>
+    <color name="heading_fg">#ffffff</color>
+    <color name="list_heading_fg">@color/text_color</color>
+    <color name="list_des_fg">#666666</color>
+    <color name="view_bg">#aaecd0ec</color>
+    <color name="content_lyr">#66ecd0ec</color>
+    <color name="content_lyr_press">#FFFFFF</color>
+    <color name="text_color">#FF820787</color>
+    <!-- Default Edit Text -->
+    <color name="co_edt_border_nor">#F8DCBF</color>
+    <color name="co_edt_fill_nor">#FFE6FF</color>
+    <color name="co_edt_border_pressed">#ffC6AC</color>
+    <color name="co_edt_fill_pressed">#FFE6FF</color>
+    <color name="co_edt_border_focused">#FFCCB4</color>
+    <color name="co_edt_fill_focused">#FFE6FF</color>
+    <!-- Home Screen Color -->
+    <color name="co_circle_item_text">@color/text_color</color>
+    <color name="co_mpt_bachground">#F3EBF3</color>
+    <color name="co_mpt_orange">#E56C18</color>
+    <color name="co_hollimage_fg">#79045f</color>
+    <color name="co_period_start">#e06919</color>
+    <color name="co_taphere">#e06919</color>
+    <color name="co_fertile_window">#820787</color>
+    <color name="co_next_perood">#f3dc8c</color>
+    <color name="co_prediction_perood">#f3dc8c</color>
+    <color name="welcome_text_color">#e06919</color>
+    <color name="welcome_text_color">#e06919</color>
+    <!-- Setting View -->
+    <!-- partner shared screen -->
+    <color name="shp_partner_pan_stoke">#E299F0</color>
+    <color name="shp_partner_pan_back">#77e299F0</color>
+    <!-- old -->
+
+    <color name="caldroid_white">#FFFFFF</color>
+    <color name="caldroid_black">#000000</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_darker_gray">#aaa</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="caldroid_sky_blue">#FFA3E8F7</color>
+    <color name="default_heading_bg">#820787</color>
+    <color name="share_button_bg">#B82EE6</color>
+    <color name="default_heading_fg">#ffffffff</color>
+    <color name="default_timeline_hint">#4D4D56</color>
+    <color name="default_timeline_fg">#00000E</color>
+    <color name="default_timeline_fg_no">#77777E</color>
+    <color name="default_ack_fg">#1F003D</color>
+    <color name="green">#8FCC85</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="black">#000000</color>
+    <color name="welcome_border">#CDCBCE</color>
+    <color name="light_background">#F2E5F6</color>
+    <color name="white">#ffffff</color>
+    <color name="periodcolor">#f464ec</color>
+    <color name="dashbordtextcolor"> #f74ef9</color>
+    <color name="newdatecolor">#820787</color>
+    <color name="disabledatecolor">#ababab</color>
+    <color name="datecolor">#752059</color>
+    <color name="yellowtextcolor">#f3dc8c</color>
+    <color name="tabselectedcolor">#f3842c</color>
+    <color name="settingsbackground">#CCfde8fc</color>
+    <color name="newsettingsbackground">#ccecd0ec</color>
+    <color name="addnotebackgroundcolor">#fbeafc</color>
+    <color name="redcolor">#cf0c0c</color>
+    <color name="tl_white_bg">#8Afcfcfc</color>
+    <color name="tl_sym_pan_bg">#E3f5e7f5</color>
+    <color name="tl_date_text">#FFFFFF</color>
+    <color name="tl_period_text">#e16e1e</color>
+    <color name="tl_note_text">#414f41</color>
+    <color name="tl_day_text1">#a25c09</color>
+    <color name="tl_day_text2">#a25c09</color>
+    <color name="tl_box_color1">#f4ca48</color>
+    <color name="tl_box_color2">#ef9dec</color>
+    <color name="tl_sym_lst">#00000000</color>
+    <color name="tl_mood_lst">#11000000</color>
+    <color name="yellocongrets">#EAAA85</color>
+
+</resources>

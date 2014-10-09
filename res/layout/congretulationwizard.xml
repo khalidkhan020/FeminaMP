@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mpt_background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/congretsimage" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/congretstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/congrets"
+                android:layout_gravity="right|center_vertical"
+                android:paddingLeft="167dp"
+                android:text="You are all set to use the app."
+                android:textColor="@color/yellocongrets"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/congrets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/congrats"
+                android:textColor="@color/co_fertile_window"
+                android:textSize="@dimen/congratulatin_text" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Welcome to MyPeriod Tracker"
+        android:textColor="@color/yellocongrets"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="You can also invite your partner and start sharing your data."
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/inviteforlogin"
+        android:textColor="@color/yellocongrets"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btnyes"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/sltr_button"
+            android:text="@string/yes"
+            android:textColor="#ffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/nobackground"
+            android:text="@string/later"
+            android:textColor="@color/co_fertile_window"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

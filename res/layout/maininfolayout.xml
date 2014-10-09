@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.linchpin.myperiodtracker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mpt_background" >
+
+    <com.linchpin.periodtracker.widget.BackBar
+        android:id="@+id/pan_back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:text="@string/info"
+        custom:backbarbackground="@drawable/backbuttonselctor" >
+    </com.linchpin.periodtracker.widget.BackBar>
+
+    <com.linchpin.periodtracker.widget.Header
+        android:id="@+id/infoheader"
+        style="@style/MyDefaultTextAppearance"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/pan_back"
+        android:text="@string/appinfo" />
+
+    <LinearLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rlbottom"
+        android:layout_below="@+id/infoheader" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/share"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewselector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/share"
+                    android:textColor="@color/newdatecolor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/belowshare"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#cccccc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rateus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewselector"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="8dp"
+                android:visibility="visible" >
+
+                <TextView
+                     android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/rateus"
+                    android:textColor="@color/newdatecolor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/belowrateus"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/helpus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewselector"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="8dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/t11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/helpus"
+                    android:textColor="@color/newdatecolor"
+                    android:textSize="18dp" />
+
+                <include
+                    android:id="@+id/includenewfesturer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/t11"
+                    layout="@layout/newfeature" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t11"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/helps_us_summery"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:id="@+id/aboutapp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewselector"
+                android:orientation="vertical"
+                android:paddingTop="8dp" >
+
+                <TextView
+                     android:id="@+id/t3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/about"
+                    android:textColor="@color/newdatecolor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/aboutapp"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#cccccc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userguide"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewselector"
+                android:orientation="vertical" >
+
+                <TextView
+                     android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/userguide"
+                    android:textColor="@color/newdatecolor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/belowuserguide"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#cccccc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/faq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewselector"
+                android:orientation="vertical" >
+
+                <TextView
+                     android:id="@+id/t5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/faq"
+                    android:textColor="@color/newdatecolor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/belowfaq"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#cccccc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blog"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/scrollView1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/textviewselector"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                     android:id="@+id/t6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/blog"
+                    android:textColor="@color/newdatecolor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/formoreinformation"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:id="@+id/feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewselector"
+                android:orientation="vertical"
+                android:paddingTop="8dp" >
+
+                <TextView
+                     android:id="@+id/t7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/feedback"
+                    android:textColor="@color/newdatecolor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/belowsendfeedback"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#cccccc" />
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                android:id="@+id/moreapp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewselector"
+                android:orientation="vertical" >
+
+                <TextView
+                     android:id="@+id/t8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/moreapps"
+                    android:textColor="@color/newdatecolor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:text="@string/belowmoreapps"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#cccccc" />
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:id="@+id/version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textviewselector"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                     android:id="@+id/t9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/version"
+                    android:textColor="@color/newdatecolor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/versionnumberbelow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="8dp"
+                    android:textColor="#666666"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

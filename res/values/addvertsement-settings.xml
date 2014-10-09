@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="adver_app_title">Id3 Tag Editor</string>
+    <string name="adver_market_url">market://details?id=com.linchpin.id3tageditor</string>
+    <string name="adver_text_message">Download Best Music Tag Editor - An application for music files which help you to manage your music and provide Smart Album and Song Art.</string>
+
+    <integer name="appirator_promot_alert_for_advertisement">10</integer>
+
+    <string name="adver_postive_button_text">TryNow</string>
+    <string name="adver_negative_button_text">Cancel</string>
+
+    <bool name="appirator_test_mode">false</bool>
+
+</resources>
